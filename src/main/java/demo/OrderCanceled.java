@@ -3,7 +3,7 @@ package demo;
 public class OrderCanceled extends AbstractEvent {
 
     private Long id;
-    private Long productid;
+    private Long productId;
     private Integer qty;
 
     public OrderCanceled(){
@@ -17,12 +17,12 @@ public class OrderCanceled extends AbstractEvent {
     public void setId(Long id) {
         this.id = id;
     }
-    public Long getProductid() {
-        return productid;
+    public Long getProductId() {
+        return productId;
     }
 
-    public void setProductid(Long productid) {
-        this.productid = productid;
+    public void setProductId(Long productId) {
+        this.productId = productId;
     }
     public Integer getQty() {
         return qty;

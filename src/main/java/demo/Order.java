@@ -11,7 +11,7 @@ public class Order {
     @Id
     @GeneratedValue(strategy=GenerationType.AUTO)
     private Long id;
-    private Long productid;
+    private Long productId;
     private Integer qty;
 
     @PostPersist
@@ -34,7 +34,6 @@ public class Order {
 
         demo.external.Cancelation cancelation = new demo.external.Cancelation();
 
-        System.out.println("############### " + this.getId());
         // mappings goes here
         cancelation.setOrderId(this.getId());
         cancelation.setStatus("CANCELED");
@@ -52,12 +51,12 @@ public class Order {
     public void setId(Long id) {
         this.id = id;
     }
-    public Long getProductid() {
-        return productid;
+    public Long getProductId() {
+        return productId;
     }
 
-    public void setProductid(Long productid) {
-        this.productid = productid;
+    public void setProductId(Long productId) {
+        this.productId = productId;
     }
     public Integer getQty() {
         return qty;
